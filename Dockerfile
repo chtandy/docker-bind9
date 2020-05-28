@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Andyhuang < cht.andy#gmail.com >
+MAINTAINER Andyhuang < cht.andy@gmail.com >
 
 RUN apt-get  update \
   && apt-get install supervisor bind9 -y \
