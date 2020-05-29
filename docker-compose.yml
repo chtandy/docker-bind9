@@ -7,7 +7,7 @@ services:
     container_name: bind9
     hostname: bind9
     volumes:
-      - ./bind:/etc/bind:ro
+      - ./bind:/etc/bind
     ports:
       - '53:53/udp'
       - '53:53/tcp'
