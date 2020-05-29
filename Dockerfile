@@ -6,5 +6,5 @@ RUN apt-get  update \
   && rm -rf /var/lib/apt/lists/* && apt-get clean
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-COPY named.conf /etc/bind/named.conf
+
 CMD ["/usr/bin/supervisord","-c","/etc/supervisor/conf.d/supervisord.conf"]
